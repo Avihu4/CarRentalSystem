@@ -103,7 +103,7 @@ public class Date
      */
     public void setDay(int dayToSet)
     {
-        if(isLegal(dayToSet, _month, _year) == true) {
+        if(isLegal(dayToSet, _month, _year)) {
             _day = dayToSet;
         }
     }
@@ -114,7 +114,7 @@ public class Date
      */
     public void setMonth(int monthToSet)
     {
-        if(isLegal(_day, monthToSet, _year) == true) {
+        if(isLegal(_day, monthToSet, _year)) {
             _month = monthToSet;
         }
     }
@@ -125,7 +125,7 @@ public class Date
      */
     public void setYear(int yearToSet)
     {
-        if((isLegal(_day, _month, yearToSet) == true)) {
+        if((isLegal(_day, _month, yearToSet))) {
             _year = yearToSet;
         }
     }
@@ -199,11 +199,11 @@ public class Date
      */
     public Date tomorrow()
     {
-        if(isLegal(_day + 1, _month, _year)== true){
+        if(isLegal(_day + 1, _month, _year)){
             return new Date(_day + 1, _month, _year);
         }
         else
-        if(isLegal(DEFAULT_DAY, _month + 1, _year)== true){
+        if(isLegal(DEFAULT_DAY, _month + 1, _year)){
             return new Date(DEFAULT_DAY, _month + 1, _year);
         }
         return new Date(DEFAULT_DAY, DEFAULT_MONTH, _year + 1);

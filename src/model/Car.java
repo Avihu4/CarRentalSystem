@@ -1,4 +1,7 @@
 package model;
+
+import java.util.Objects;
+
 /**
  * This class represents a Car object.
  *
@@ -83,7 +86,7 @@ public class Car
      * returns the manual of the car.
      * @return The manual of the car.
      */
-    public boolean getisManual()
+    public boolean getIsManual()
     {
         return _isManual;
     }
@@ -148,7 +151,7 @@ public class Car
      */
     public boolean equals (Car other)
     {
-        return _type == other._type && _brand == other._brand && _isManual == other._isManual;
+        return _type == other._type && Objects.equals(_brand, other._brand) && _isManual == other._isManual;
     }
 
     /**

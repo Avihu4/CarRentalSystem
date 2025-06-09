@@ -68,7 +68,7 @@ public class CarRentalSystemTest {
         assertEquals(1234567, car.getId());
         assertEquals('A', car.getType());
         assertEquals("Honda", car.getBrand());
-        assertFalse(car.getisManual());
+        assertFalse(car.getIsManual());
     }
 
     @Test
@@ -117,7 +117,7 @@ public class CarRentalSystemTest {
         assertEquals(original.getId(), copy.getId());
         assertEquals(original.getType(), copy.getType());
         assertEquals(original.getBrand(), copy.getBrand());
-        assertEquals(original.getisManual(), copy.getisManual());
+        assertEquals(original.getIsManual(), copy.getIsManual());
     }
 
     @Test
@@ -133,7 +133,7 @@ public class CarRentalSystemTest {
         assertEquals(7654321, car.getId());
         assertEquals('D', car.getType());
         assertEquals("Nissan", car.getBrand());
-        assertFalse(car.getisManual());
+        assertFalse(car.getIsManual());
     }
 
     @Test
